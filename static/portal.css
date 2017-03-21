@@ -1,0 +1,138 @@
+/* My portal page styles */
+
+html {
+    background-color:#ccc; /* Red Green Blue */
+    font-family: Arial, sans-serif;
+}
+
+body {
+  margin:0;
+}
+
+div#wrapper {
+    background-color:#fff;
+    width:80%;
+    margin:auto;
+    overflow:auto;
+    padding:2em;
+    box-sizing:border-box;
+
+}
+
+header {
+    text-align:center;
+}
+
+header h1 {
+    margin-left:0.7em;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+header img {
+  vertical-align:middle;
+}
+
+.uxdoc {
+    line-height:0.5em;
+    position:relative;
+    top:1px;
+}
+
+.googledoclink {
+    font-size:0.7em;
+    position:relative;
+    top:2px;
+}
+
+.externallinkicon {
+    font-size:0.7em;
+}
+
+h2 {
+    margin-bottom:0.5em;
+}
+
+p {
+    margin:0.5em 0em 1em 0em; /* T R B L -- Top Right Bottom Left */
+}
+
+footer p {
+    padding:1em;
+    background-color:#333;
+    margin:0;
+}
+
+footer {
+    clear:both;
+    text-align:center;
+    width:80%;
+    margin:auto;
+}
+
+small {
+    color:#fff;
+}
+
+small a {
+    color:#fff;
+}
+
+/* DESKTOP */
+@media all and (min-width:1280px) {
+
+    img.desktop {
+        float:right;
+        width:50%;
+        margin-left:2%;
+    }
+
+    img.tablet, img.phone {
+        display:none;
+    }
+}
+
+/* TABLET */
+@media all and (min-width:481px) and (max-width:1279px) {
+
+    img.tablet {
+        float:left;
+        width:50%;
+        margin-right:2%;
+    }
+
+    img.desktop, img.phone {
+        display:none;
+    }
+
+}
+
+/* PHONE */
+@media all and (max-width:480px) {
+
+    div#wrapper {
+        width:100%;
+    }
+
+    header h1 {
+        text-align:center;
+        margin-left:0;
+    }
+
+    img.phone {
+        width:100%;
+    }
+
+    img.desktop, img.tablet {
+        display:none;
+    }
+
+    footer {
+      width:100%
+    }
+
+    header h1 {
+        display:block;
+    }
+
+}
